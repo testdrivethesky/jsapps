@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Library Fines Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assign2.css" />
+    <script type="text/javascript" src="assign2.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Library Fines Calculator</h1>
+        <p>Enter the values below and click "Calculate".</p>
+        
+        <label for="overdue">Days Overdue:</label>
+        <input type="text" id="overdue" /><br />
+        
+        <label for="rate">Daily Fine Rate:</label>
+        $<input type="text" id="rate" /><br />
+        
+        <label for="items">Number of Items:</label>
+        <input type="text" id="items" /><br />
+        
+        <label for="totalDue">Yearly Total Due:</label>
+        $<input type="text" id="totalDue" disabled="disabled" /><br />
+        
+        <label>&nbsp;</label>
+        <input type="button" id="calculate" value="Calculate" /><br />
+		 <label>&nbsp;</label>
+        <input type="button"  id="clear" value="Clear" /><br />
+    </div>
+<script type="text/javascript">
+	var today = new Date();
+	document.writeln( "Today is" + " " + today.toDateString() );
+</script>
+<noscript>You must enable JavaScript for this application.</noscript>
+</body>
+</html>
